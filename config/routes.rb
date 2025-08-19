@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :challenges, only: [:index, :show] do
+  resources :challenges, only: [:index, :show, :new, :destroy] do
     # challenges/:challenge_id/messages/new
     # :id du challenge pour pouvoir passer challenge.content dans le message
     resources :messages, only: [:new, :create, :index]
