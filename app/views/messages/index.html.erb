@@ -1,0 +1,8 @@
+<h1><%= @challenge.name %></h1>
+
+<% @challenge.messages.each do |message| %>
+  <p>
+    <strong><%= message.role %></strong> <!-- user ou assistant -->
+    <%= raw(render_markdown(message.content)) %>
+  </p>
+<% end %>

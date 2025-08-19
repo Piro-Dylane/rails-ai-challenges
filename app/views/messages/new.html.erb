@@ -1,0 +1,4 @@
+<%= simple_form_for [@challenge, @message] do |f| %>
+	<%= f.input :content, placeholder: "Ask a question", required: true %>
+	<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
