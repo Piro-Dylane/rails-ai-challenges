@@ -7,6 +7,10 @@ class ChallengesController < ApplicationController
     @challenge = Challenge.find(params[:id])
   end
 
+  def new
+
+  end
+
   def destroy
   end
 end
